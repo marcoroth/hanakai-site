@@ -11,12 +11,7 @@
         <%= render "svgs/icons/arrow_left", width: 16, height: 16, class_name: "fill-current mb-1.5" %>
 
         <p>
-          <span
-            class="
-              block font-mono text-xs font-semibold tracking-wider uppercase
-              text-primary mb-2
-            "
-          >
+          <span class="block font-mono text-xs font-semibold tracking-wider uppercase text-primary mb-2">
             <%= prev_item.guide.title %>
           </span>
 
@@ -34,20 +29,12 @@
 
     <% if next_item %>
       <a
-        class="
-          ml-auto flex max-w-[50%] gap-2 text-link text-right items-end
-          group
-        "
+        class="ml-auto flex max-w-[50%] gap-2 text-link text-right items-end group"
         href="<%= next_item.path %>"
         aria-label="Go to next guide"
       >
         <p>
-          <span
-            class="
-              block font-mono text-xs font-semibold tracking-wider uppercase
-              text-primary mb-2
-            "
-          >
+          <span class="block font-mono text-xs font-semibold tracking-wider uppercase text-primary mb-2">
             <%= next_item.guide.title %>
           </span>
 

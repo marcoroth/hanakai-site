@@ -14,12 +14,7 @@
         <ol data-testid="guides-list">
           <% org_guides.each do |guide_for_nav| %>
             <li class="mb-6">
-              <div
-                class="
-                  font-mono uppercase text-xs font-semibold text-primary
-                  tracking-wide mb-2
-                "
-              >
+              <div class="font-mono uppercase text-xs font-semibold text-primary tracking-wide mb-2">
                 <%= guide_for_nav.title %>
 
                 <% if guide_for_nav.deprecated %>
@@ -39,12 +34,7 @@
         <ol>
           <% org_guides.each do |guide_for_nav| %>
             <li class="mb-6">
-              <div
-                class="
-                  font-mono uppercase text-xs font-semibold text-primary
-                  tracking-wide mb-2
-                "
-              >
+              <div class="font-mono uppercase text-xs font-semibold text-primary tracking-wide mb-2">
                 <%= guide_for_nav.title %>
 
                 <% if guide_for_nav.deprecated %>
@@ -60,9 +50,7 @@
 
       <% if page.nested_headings.length > 0 %>
         <%= pages_nav_mobile.slot :toc do %>
-          <nav
-            data-defo-target-current="<%= { activeClassNames: ["font-bold", "b-primary"] }.to_json %>"
-          >
+          <nav data-defo-target-current="<%= { activeClassNames: ["font-bold", "b-primary"] }.to_json %>">
             <%= render "doc_pages/toc_headings", headings: page.nested_headings, testid: nil, depth: 0 %>
           </nav>
         <% end %>

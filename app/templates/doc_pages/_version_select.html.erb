@@ -38,10 +38,7 @@
       active_classes = "bg-primary-reversed text-primary px-2 py-1 rounded-md"
       inactive_classes = "text-white px-2 py-1 hover:underline" %>
 
-        <a
-          class="<%= base_classes %> <%= active ? active_classes : inactive_classes %>"
-          href="<%= url %>"
-        >
+        <a class="<%= base_classes %> <%= active ? active_classes : inactive_classes %>" href="<%= url %>">
           <%= other_version %>
 
           <% if active %>

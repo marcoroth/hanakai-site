@@ -16,23 +16,16 @@
     <%= render "shared/names/dry" %>
   </h1>
 
-  <h1
-    class="
-      text-5xl lg:text-7xl font-black tracking-tighter leading-none mb-6
-      text-balance
-    "
-  >
+  <h1 class="text-5xl lg:text-7xl font-black tracking-tighter leading-none mb-6 text-balance">
     Ruby gems for better code
   </h1>
 
   <p class="text-2xl text-balance mb-3">
-    Dry is a collection of Ruby gems that help you write clear, flexible, and
-    maintainable Ruby code.
+    Dry is a collection of Ruby gems that help you write clear, flexible, and maintainable Ruby code.
   </p>
 
   <p class="text-2xl text-balance mb-8">
-    Covering business logic to everyday utilities, these gems work great
-    together or standalone in any kind of app.
+    Covering business logic to everyday utilities, these gems work great together or standalone in any kind of app.
   </p>
 
   <%= render_with_slots "shared/components/button_primary", href: "/learn/dry", label: "View the Dry docs" do |btn| %>
@@ -52,8 +45,7 @@
       </h2>
 
       <p class="text-2xl text-balance">
-        These gems help you write business logic that’s explicit, predictable,
-        and testable.
+        These gems help you write business logic that’s explicit, predictable, and testable.
       </p>
     </div>
 
@@ -61,13 +53,13 @@
       <%= render_with_slots "shared/components/project_feature", title: "Validation", reversed: false, code: validation_code, logo: "dry" do |f| %>
         <%= f.slot :description do %>
           <p class="text-xl mb-4">
-            With Dry validation contracts, you can specify precisely the data
-            you want to accept for each use case in your app.
+            With Dry validation contracts, you can specify precisely the data you want to accept for each use case in
+            your app.
           </p>
 
           <p class="text-xl mb-6">
-            Since contracts are standalone, they help you keep your validation
-            logic reusable, testable, and separate from your data persistence.
+            Since contracts are standalone, they help you keep your validation logic reusable, testable, and separate
+            from your data persistence.
           </p>
 
           <%= render_with_slots "shared/components/button_secondary", href: "/learn/dry/dry-validation", label: "View validation docs" do |btn| %>
@@ -81,14 +73,13 @@
       <%= render_with_slots "shared/components/project_feature", title: "Types", reversed: true, code: types_code, logo: "dry" do |f| %>
         <%= f.slot :description do %>
           <p class="text-xl mb-4">
-            With Dry types, you can build your app’s own library of
-            self-documenting type checks and data transformations. You can use
-            your types standalone, or bring them together in immutable structs.
+            With Dry types, you can build your app’s own library of self-documenting type checks and data
+            transformations. You can use your types standalone, or bring them together in immutable structs.
           </p>
 
           <p class="text-xl mb-6">
-            Together, this helps you write more expressive, confident code,
-            knowing you’re working with data you can trust.
+            Together, this helps you write more expressive, confident code, knowing you’re working with data you can
+            trust.
           </p>
 
           <%= render_with_slots "shared/components/button_secondary", href: "/learn/dry/dry-types", label: "View types docs" do |btn| %>
@@ -102,16 +93,14 @@
       <%= render_with_slots "shared/components/project_feature", title: "Operations and results", reversed: false, code: operations_code, logo: "dry" do |f| %>
         <%= f.slot :description do %>
           <p class="text-xl mb-4">
-            Operations help you organize your essential business logic. Create
-            your operation from a series of steps, each returning a success or
-            failure. When you call your operation, if any step fails, the
-            operation stops and that failure is returned right away.
+            Operations help you organize your essential business logic. Create your operation from a series of steps,
+            each returning a success or failure. When you call your operation, if any step fails, the operation stops
+            and that failure is returned right away.
           </p>
 
           <p class="text-xl mb-6">
-            You can chain operations together into higher-level workflows, and
-            when you need even more control, you can tap into a full library of
-            monads for advanced composition.
+            You can chain operations together into higher-level workflows, and when you need even more control, you can
+            tap into a full library of monads for advanced composition.
           </p>
 
           <%= render_with_slots "shared/components/button_secondary", href: "/learn/dry/dry-operation", label: "View operations docs" do |btn| %>
@@ -132,8 +121,7 @@
       </h2>
 
       <p class="text-2xl text-balance">
-        All sorts of goodies here: these gems are practical, standalone
-        utilities for both libraries and apps.
+        All sorts of goodies here: these gems are practical, standalone utilities for both libraries and apps.
       </p>
     </div>
 
@@ -141,9 +129,8 @@
       <%= render_with_slots "shared/components/project_feature", title: "Logging", reversed: false, code: logging_code, logo: "dry" do |f| %>
         <%= f.slot :description do %>
           <p class="text-xl mb-4">
-            Dry Logger is a powerful and flexible replacement for Ruby’s
-            standard logger. Use it to log with consistent formatting and to
-            multiple outputs.
+            Dry Logger is a powerful and flexible replacement for Ruby’s standard logger. Use it to log with consistent
+            formatting and to multiple outputs.
           </p>
 
           <p class="text-xl mb-6">
@@ -161,10 +148,9 @@
       <%= render_with_slots "shared/components/project_feature", title: "Inflections", reversed: true, code: inflections_code, logo: "dry" do |f| %>
         <%= f.slot :description do %>
           <p class="text-xl mb-6">
-            Dry Inflector is a lightweight inflections gem that you can use
-            anywhere. It comes with a familiar API that does all the things you
-            expect: pluralize, singularize, and convert cases, all based on your
-            own configuration.
+            Dry Inflector is a lightweight inflections gem that you can use anywhere. It comes with a familiar API that
+            does all the things you expect: pluralize, singularize, and convert cases, all based on your own
+            configuration.
           </p>
 
           <%= render_with_slots "shared/components/button_secondary", href: "/learn/dry/dry-inflector", label: "View inflector docs" do |btn| %>
@@ -178,9 +164,8 @@
       <%= render_with_slots "shared/components/project_feature", title: "Initializers", reversed: false, code: initializers_code, logo: "dry" do |f| %>
         <%= f.slot :description do %>
           <p class="text-xl mb-6">
-            Use Dry Initializer to avoid repetitive class constructors and just
-            declare what your objects need, along with optional type checks and
-            defaults.
+            Use Dry Initializer to avoid repetitive class constructors and just declare what your objects need, along
+            with optional type checks and defaults.
           </p>
 
           <%= render_with_slots "shared/components/button_secondary", href: "/learn/dry/dry-initializer", label: "View initializer docs" do |btn| %>
@@ -194,8 +179,8 @@
       <%= render_with_slots "shared/components/project_feature", title: "Configuration", reversed: true, code: configuration_code, logo: "dry" do |f| %>
         <%= f.slot :description do %>
           <p class="text-xl mb-6">
-            Dry Configurable helps you fulfil a common pattern within Ruby:
-            configurable objects with validation and type checking.
+            Dry Configurable helps you fulfil a common pattern within Ruby: configurable objects with validation and
+            type checking.
           </p>
 
           <%= render_with_slots "shared/components/button_secondary", href: "/learn/dry/dry-configurable", label: "View configurable docs" do |btn| %>
@@ -216,8 +201,7 @@
       </h2>
 
       <p class="text-2xl text-balance">
-        Structure whole apps around clear boundaries and loosely-coupled
-        components.
+        Structure whole apps around clear boundaries and loosely-coupled components.
       </p>
     </div>
 
@@ -225,9 +209,8 @@
       <%= render_with_slots "shared/components/project_feature", title: "Systems and auto-injection", reversed: false, code: systems_code, logo: "dry" do |f| %>
         <%= f.slot :description do %>
           <p class="text-xl mb-4">
-            Take the core of the Hanami framework and tailor it exactly to your
-            needs. Dry System and Dry Auto Inject help you construct apps from
-            clear, focused components with explicit dependencies.
+            Take the core of the Hanami framework and tailor it exactly to your needs. Dry System and Dry Auto Inject
+            help you construct apps from clear, focused components with explicit dependencies.
           </p>
 
           <%= render_with_slots "shared/components/button_secondary", href: "/learn/dry/dry-system", label: "View system docs" do |btn| %>
@@ -241,13 +224,12 @@
       <%= render_with_slots "shared/components/project_feature", title: "Command line tools", reversed: true, code: cli_code, logo: "dry" do |f| %>
         <%= f.slot :description do %>
           <p class="text-xl mb-4">
-            Create rich command line interfaces with argument parsing,
-            subcommands, and help text.
+            Create rich command line interfaces with argument parsing, subcommands, and help text.
           </p>
 
           <p class="text-xl mb-6">
-            Build your CLI like you would a real app, with commands as classes,
-            and the full power of Ruby at your disposal.
+            Build your CLI like you would a real app, with commands as classes, and the full power of Ruby at your
+            disposal.
           </p>
 
           <%= render_with_slots "shared/components/button_secondary", href: "/learn/dry/dry-cli", label: "View CLI docs" do |btn| %>
@@ -273,21 +255,18 @@
 
   <ul class="text-left text-xl lg:text-2xl flex flex-col gap-4 mb-10 list-disc pl-5">
     <li>
-      <strong>A comprehensive toolkit.</strong> We offer 25+ gems spanning
-      business logic, architecture, and everyday utilities. You can use what you
-      need, and skip what you don’t.
+      <strong>A comprehensive toolkit.</strong> We offer 25+ gems spanning business logic, architecture, and everyday
+      utilities. You can use what you need, and skip what you don’t.
     </li>
 
     <li>
-      <strong>Works everywhere.</strong> Dry gems work everywhere, from Hanami
-      to Rails to standalone gems. We make no framework assumptions, and don’t
-      lock you in.
+      <strong>Works everywhere.</strong> Dry gems work everywhere, from Hanami to Rails to standalone gems. We make no
+      framework assumptions, and don’t lock you in.
     </li>
 
     <li>
-      <strong>Proven in production.</strong> Built on over a decade of
-      refinement and real-world use, these are proven tools you can depend on
-      for the long-term.
+      <strong>Proven in production.</strong> Built on over a decade of refinement and real-world use, these are proven
+      tools you can depend on for the long-term.
     </li>
   </ul>
 

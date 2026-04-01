@@ -7,10 +7,7 @@
     breakpoints: [{ breakpoint: "lg", comparator: "<"}]
   } %>
 
-<div
-  class="lg:hidden -mx-4"
-  data-defo-mobile-page-nav="<%= mobile_page_nav_props.to_json %>"
->
+<div class="lg:hidden -mx-4" data-defo-mobile-page-nav="<%= mobile_page_nav_props.to_json %>">
   <div
     class="flex flex-1 justify-between bg-neutral px-2"
     data-defo-size-to-var="<%= { blockVarName: "--hk-mobile-page-nav-height" }.to_json %>"

@@ -26,10 +26,7 @@
     </div>
   </div>
 
-  <div
-    class="grow lg:flex-8/12 divide-y divide-(--hk-color-neutral-subtle)"
-    data-testid="<%= id %>-guides"
-  >
+  <div class="grow lg:flex-8/12 divide-y divide-(--hk-color-neutral-subtle)" data-testid="<%= id %>-guides">
     <% section_guides.each do |guide| %>
       <%= render "guides/guide_row", guide: guide, theme: theme %>
     <% end %>
